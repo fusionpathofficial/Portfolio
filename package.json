@@ -2,10 +2,13 @@
   "name": "fusion-path",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://fusionpathofficial.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -13,7 +16,8 @@
     "@emailjs/browser": "^4.4.1",
     "lucide-react": "^1.30.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -21,6 +25,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
     "autoprefixer": "^10.5.4",
+    "gh-pages": "^6.3.0",
     "oxlint": "^1.75.0",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
