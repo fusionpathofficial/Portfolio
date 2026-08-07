@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary-dark: #06131D;
+  --accent-orange: #DE4A1A;
+  --accent-orange-hover: #c43c0f;
+  --bg-light: #FFFFFF;
+  --text-dark: #06131D;
+  --text-muted: #475569;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #06131D;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* ─── HOME ROOT ──────────────────────────────────────────────────────────── */
+.home-root {
+  width: 100%;
+  background: #FFFFFF;
+  color: #06131D;
+}
+
+/* ─── HERO SECTION (LIGHT MODE) ─────────────────────────────────────────── */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, rgba(222, 74, 26, 0.06) 0%, transparent 60%),
+              radial-gradient(circle at 80% 80%, rgba(6, 19, 29, 0.04) 0%, transparent 50%);
+}
+
+.hero-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(6, 19, 29, 0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(6, 19, 29, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 60%, transparent 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3.2rem, 7.5vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.hero-name-fusion {
+  color: #06131D;
+}
+
+.hero-name-path {
+  color: #DE4A1A;
+}
+
+.hero-dot {
+  color: #06131D;
+}
+
+.hero-tagline {
+  font-size: clamp(1.4rem, 3.2vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #06131D;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  color: #475569;
+  max-width: 680px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.1rem 2.25rem;
+  background: #06131D;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -5px rgba(6, 19, 29, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -5px rgba(6, 19, 29, 0.4);
+  background: #112536;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.1rem 2.25rem;
+  background: #DE4A1A;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -5px rgba(222, 74, 26, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: #c43c0f;
+  box-shadow: 0 15px 30px -5px rgba(222, 74, 26, 0.45);
+}
