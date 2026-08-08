@@ -2,7 +2,7 @@
   "name": "fusion-path",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fusionpathofficial.github.io/Portfolio",
+  "homepage": "https://fusionpath.in",
   "type": "module",
   "scripts": {
     "dev": "vite",

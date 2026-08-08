@@ -25,23 +25,30 @@ export function About() {
         {
             name: "Stanley",
             role: "Founder & CEO",
-            handle: "stanley/fusionpath",
-            socialType: "linkedin",
-            image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600"
+            handle: "@x.stanley.xavier",
+            socialType: "instagram",
+            image: "https://cdn.phototourl.com/free/2026-08-08-e218631a-6b5c-480d-88df-da1a8ce9a923.png"
         },
         {
-            name: "Steve",
+            name: "Steve Richardson",
             role: "Co-Founder & Marketing Specialist",
-            handle: "steve/fusionpath",
-            socialType: "twitter",
-            image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600"
+            handle: "Stevejoseph123",
+            socialType: "github",
+            image: "https://cdn.phototourl.com/free/2026-08-08-27a5bb63-b725-44c7-92eb-7806601ecd48.png"
         },
         {
             name: "Manoj",
             role: "Designer & Developer",
-            handle: "manoj/fusionpath",
+            handle: "Manoj170505",
             socialType: "github",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600"
+            image: "https://cdn.phototourl.com/free/2026-08-08-34b8755e-d147-4268-b720-e3015a752283.png"
+        },
+        {
+            name: "Vishalini",
+            role: "Project Manager",
+            handle: "@itzzz_candle",
+            socialType: "instagram",
+            image: "https://cdn.phototourl.com/free/2026-08-08-b719b7dc-7ae4-47ea-8ca1-67d9000455ab.jpg"
         }
     ];
 
@@ -164,8 +171,8 @@ export function About() {
                                         </div>
 
                                         <div className={`p-4 transition flex justify-between items-center ${isSelected
-                                                ? "bg-[#DE4A1A] text-white"
-                                                : "bg-white text-[#06131D]"
+                                            ? "bg-[#DE4A1A] text-white"
+                                            : "bg-white text-[#06131D]"
                                             }`}>
                                             <div>
                                                 <h3 className="text-base font-bold leading-tight">{member.name}</h3>
