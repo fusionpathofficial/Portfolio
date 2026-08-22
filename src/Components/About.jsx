@@ -42,13 +42,6 @@ export function About() {
             handle: "Manoj170505",
             socialType: "github",
             image: "https://cdn.phototourl.com/free/2026-08-08-34b8755e-d147-4268-b720-e3015a752283.png"
-        },
-        {
-            name: "Vishalini",
-            role: "Project Manager",
-            handle: "@itzzz_candle",
-            socialType: "instagram",
-            image: "https://cdn.phototourl.com/free/2026-08-08-b719b7dc-7ae4-47ea-8ca1-67d9000455ab.jpg"
         }
     ];
 
